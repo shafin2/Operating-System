@@ -1,0 +1,8 @@
+gedit new.sh
+
+but when you run it say permission denied
+
+chmod --> to give file permisssions
+
+
+to save bash code you use .sh

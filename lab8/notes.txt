@@ -1,0 +1,23 @@
+Topic -- Redirection
+
+
+--> ./a.out > file.txt
+output of program will save in file.txt
+
+
+Thread vs Process
+--> thread is unique within process, process is unique within the system
+
+#include<pthread.h>
+
+--> like process have id pid_t, thread also have but always not return int id 
+--> pthread_t is dataType to store id of thread (as it can be int, float, hex)
+pthread_t id;
+--> first of all create thread
+pthread_create(&id,NULL,function,NULL);
+
+
+--> function should be pointer function which also return pointer
+
+--> also need to join thread like we did in shared memory
+pthread_join(one,NULL);
